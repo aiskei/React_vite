@@ -1,5 +1,6 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
+import styles from './houseList.module.css'
 
 const houses = [
     {
@@ -24,7 +25,7 @@ const houses = [
 function HouseList() {
     return (
         <>
-            <h1>Available Houses</h1>
+            <h1 className={styles.availableHouses}>Available Houses on the market</h1>
             <div>
                 <Table responsive>
                     <thead>
