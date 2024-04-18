@@ -1,6 +1,5 @@
 import React from 'react'
-import Table from 'react-bootstrap/Table';
-
+import Table from 'react-bootstrap/Table'
 
 const houses = [
     {
@@ -17,7 +16,7 @@ const houses = [
     },
     {
         id: '3',
-        address: '3 street, USA',
+        address: '3rd street, USA',
         country: 'United States',
         price: 1000000
     }
@@ -25,9 +24,9 @@ const houses = [
 function HouseList() {
     return (
         <>
-            <h1>These are the available house</h1>
+            <h1>Available Houses</h1>
             <div>
-                <Table striped bordered hover>
+                <Table responsive>
                     <thead>
                         <tr>
                             <th>Address</th>

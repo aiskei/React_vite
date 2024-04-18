@@ -4,7 +4,7 @@ import Home from './components/Home.jsx'
 
 function App() {
     return [
-        <div>
+        <div className="container">
             <Banner />
             <Home />
             <HouseList />
