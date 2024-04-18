@@ -1,6 +1,7 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
 import styles from './houseList.module.css'
+import currencyFormatter from '../helpers/currencyFormatter'
 
 const houses = [
     {
@@ -40,7 +41,7 @@ function HouseList() {
                             <tr key={house.id}>
                                 <td>{house.address}</td>
                                 <td>{house.country}</td>
-                                <td>{house.price}</td>
+                                <td>{currencyFormatter.format(house.price)}</td>
                             </tr>
                         ))}
                     </tbody>
