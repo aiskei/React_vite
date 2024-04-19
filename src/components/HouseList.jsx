@@ -14,7 +14,7 @@ const housesAray = [
         id: '2',
         address: '2nd street, USA',
         country: 'United States',
-        price: 750000
+        price: 500000
     },
     {
         id: '3',
@@ -58,7 +58,7 @@ function HouseList() {
                             <tr key={house.id}>
                                 <td>{house.address}</td>
                                 <td>{house.country}</td>
-                                <td>{currencyFormatter.format(house.price)}</td>
+                                <td className={`${house.price <= 500000 ?  "text-primary" : ""}`}>{currencyFormatter.format(house.price)}</td>
                             </tr>
                         ))}
                     </tbody>
